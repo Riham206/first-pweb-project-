@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>your fragrance</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="images/logo.png.png">
+<style>
+/*body{
+  background: linear-gradient(to right,#3b2a1a, #d2b48c);
+}*/
+    
+    .t1 {
+        
+        font-size: 200%;
+        border-spacing:10px ;
+        
+    }
+    
+    .t2 {
+        border-spacing:50px ;
+
+    }
+    .ms {
+        text-align: center;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <img src="images/logo.png.png">
+    
+        <div class="search-box">
+         <input type="text" placeholder="Search perfumes...">
+         <button>search</button>
+        </div>
+        <div class="user-menu">
+  <img src="images/ACOUNT.jpg" class="avatar">
+  <div class="dropdown">
+    <?php if(isset($_SESSION["user"])): ?>
+        <p>Nom: <?php echo $_SESSION["user"]; ?></p>
+        <p>Adresse: <?php echo $_SESSION["adress"]; ?></p>
+        <p>Password:<?php echo $_SESSION["password"];?></p>
+        <P>Phone :<?php echo $_SESSION["phone"];?></p>
+        <p>Credit: <?php echo $_SESSION["credit"];?></p>
+    <?php else: ?>
+        <p>Non connecté</p>
+    <?php endif; ?>
+  </div>
+</div>
+
+  </div>
+</div>
+    <h1><i> Your Fragrance </i> </h1>
+
+
+    <nav>
+     <section class="s1">
+        <table class="t1" >
+         <tr>
+             <td>  
+                 <a href="#women">Women</a> |
+             </td>
+             
+                
+              <td>
+                  <a href="#men">Men</a> |
+              </td>
+              <td>
+                    <a href="#">brands</a> |
+              </td> 
+             <td> 
+                 <a href="https://www.instagram.com/p/DPd3Q9yCCDl/?hl=en" >
+                   <img src="images/insta.jpg" class="insta">
+                 </a> 
+             </td>
+             <td>
+                    <a href="https://www.facebook.com/inukaSA/posts/%F0%9D%97%A0%F0%9D%97%98%F0%9D%97%A0%F0%9D%97%95%F0%9D%97%98%F0%9D%97%A5-%F0%9D%97%A0%F0%9D%97%A2%F0%9D%97%A1%F0%9D%97%97%F0%9D%97%94%F0%9D%97%AC-where-we-shine-the-spotlight-on-beautiful-and-inspiring-posts-from/1333955458757783/" >
+                        <img src="images/fb.jpg" class="facebook">
+                   </a> 
+             </td>
+             <td>
+                 <a href="https://wa.me/myperfume" >
+                 <img src="images/whats app.jpg" class="whats-app">
+                    </a> 
+             </td>
+         </tr>
+        </table>
+     </section>
+    </nav>
+</header>
+<img src="images/a big image.jpg" >
+
+
+<hr>
+<main>
+<section>
+    <h2 id="men">Men Perfumes</h2>
+     <table class="t2">
+    <tr>
+     <td>
+          <img src="images/m1.png" width="200">
+         <h6>Tobacco Maniac Theodoros Kalotinis</h6>
+         <p> tabaco and sweet sent </p>
+         <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="1234">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">100 perfum bottles available</div>
+         <div class="price">Price:$30</div>
+    <button class="buy-butn">Buy Now</button>
+     
+     
+    </td>
+
+      <td>
+           <img src="images/m2.png" width="200">
+           <h6>The One Gold For Men Dolce&Gold</h6>
+           <p> floral and fresh sent </p>
+        <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="9427">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">50 perfum bottles available</div>
+         <div class="price">Price:$50</div>
+    <button class="buy-butn">Buy Now</button>
+</td>
+
+        <td>
+         <img src="images/m3.png" width="200">
+         <h6>Crimson Rayhaan </h6>
+         <p>warm spicy and cinamon sent</p>
+         <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="8734">
+            <label>Quantity:</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">500 perfum bottles available</div>
+         <div class="price">Price:$85</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+       
+       <td>
+         <img src="images/m4.png" width="200">
+         <h6>Curve for Men Liz Claiborne</h6>
+         <p>woody and citrus sent </p>
+         <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="0932">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">300 perfum bottles available</div>
+         <div class="price">Price:$40</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+        
+       <td>
+         <img src="images/m5.png" width="200">
+         <h6>Vacation Arquiste  </h6>
+         <p> sweet and coconut sent </p>
+         <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="6538">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">500 perfum bottles available</div>
+         <div class="price">Price:$90</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+   </tr>
+ </table>
+ <details>
+      <summary class="ms" ><b><i> click here for more womens perfumes</i></b></summary>
+
+        <table class="t2">
+        <tr>
+     <td>
+          <img src="images/m6.png" width="200">
+          <h6>Men Only O Boticário</h6>
+         <p>Ffresh spicy and amber sent</p>
+         <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="7631">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">20 perfum bottles available</div>
+         <div class="price">Price:$30</div>
+    <button class="buy-butn">Buy Now</button>
+     </td>
+
+      <td>
+           <img src="images/m7.png" width="200">
+           <h6>Lavande 31 Le Labo </h6>
+           <p>lavender and citrus</p>
+           <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="6538">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+           <div class="stock">100 perfum bottles available</div>
+           <div class="price">Price:$50</div>
+    <button class="buy-butn">Buy Now</button>
+        </td>
+
+        <td>
+         <img src= "images/m8.png" width="200">
+         <h6>Angel's Dust Francesca Bianchi</h6>
+         <p>powdery and ember sent</p>
+          <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="7609">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">100 perfum bottles available</div>
+         <div class="price">Price:$35</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+       <td>
+         <img src="images/m9.png" width="200">
+         <h6>Angham Lattafa Perfumes </h6>
+         <p>sweet and lavender sent</p>
+          <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="6487">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">300 perfum bottles available</div>
+         <div class="price">Price:$80</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+       </tr>
+    </table>
+ </details>
+ 
+</section>
+<hr>
+
+<section>
+    <h2 id="women">Women Perfumes</h2>
+ <table class="t2">
+    <tr>
+     <td>
+          <img src="images/1.png" width="200">
+          <h6>Ambery Vanilla Dossier</h6>
+         <p>white floral and soft spicy sent </p>
+          <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="5238">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">450 perfum bottles available</div>
+         <div class="price">Price:$30</div>
+    <button class="buy-butn">Buy Now</button>
+     </td>
+
+      <td>
+           <img src="images/2.png" width="200">
+           <h6>DKNY Nectar Love Donna Karan</h6>
+           <P> beeswas and honey sent</P>
+            <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="7864">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+           <div class="stock">20 perfum bottles available</div>
+           <div class="price">Price:$50</div>
+    <button class="buy-butn">Buy Now</button>
+        </td>
+
+        <td>
+         <img src="images/3.png" width="200">
+         <h6>Lophiel Lophiel</h6>
+         <p>floral and citrus sent</p> 
+         <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="8731">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">120 perfum bottles available</div>
+         <div class="price">Price:$55</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+       <td>
+         <img src="images/4.png" width="200">
+         <h6>Beige 96 Mine. Perfumery </h6>
+         <P> Aromatic and woody sent</P>
+          <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="6576">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">300 perfum bottles available</div>
+         <div class="price">Price:$75</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+       <td>
+         <img src="images/6.png" width="200">
+         <h6>Poltergeist Heretic Parfum </h6>
+         <p> aromatic and woody sent </p>
+          <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="3856">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">400 perfum bottles available</div>
+         <div class="price">Price:$80</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+   </tr>
+</table>
+<details>
+  <summary class="ms" ><b><i> click here for more womens perfumes</i></b></summary>
+
+  <table class="t2">
+    <tr>
+     <td>
+          <img src="images\5.png" width="200">
+         <p>Perfume 1</p>
+          <form action="buy.php" method="post">
+            <input type="hidden" name="id_p" value="6538">
+            <label>Quantity :</label>
+            <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+         </form>
+         <div class="stock">100 perfum bottles available</div>
+         <div class="price">Price:$80</div>
+    <button class="buy-butn">Buy Now</button>
+     </td>
+
+      <td>
+           <img src="images/7.png" width="200">
+            <h6>Bare Vanilla Victoria's Secret </h6>
+            <p>vanila and pwdery sent</p>
+              <form action="buy.php" method="post">
+                 <input type="hidden" name="id_p" value="6839">
+                  <label>Quantity :</label>
+                   <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+              </form>
+           <div class="stock">30 perfum bottles available</div>
+          <div class="price">Price:$78</div>
+    <button class="buy-butn">Buy Now</button>
+        </td>
+
+        <td>
+         <img src="images/8.png" width="200">
+         <h6>Ari Ariana Grande </h6>
+         <p>sweet and fruity sent</p>
+          <form action="buy.php" method="post">
+                 <input type="hidden" name="id_p" value="8799">
+                  <label>Quantity :</label>
+                   <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+              </form> 
+                       <div class="stock">50 perfum bottles available</div>
+         <div class="price">Price:$50</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+       <td>
+         <img src="images/9.png" width="200">
+         <h6>Toy 2 Moschino</h6>
+         <p>fruity and floral sent</p>
+         <form action="buy.php" method="post">
+                 <input type="hidden" name="id_p" value="6785">
+                  <label>Quantity :</label>
+                   <input type="number" name="quantity" min="0" value="07" class="quantity-input">
+              </form>
+         <div class="stock">600 perfum bottles available</div>
+         <div class="price">Price:$55</div>
+    <button class="buy-butn">Buy Now</button>
+       </td>
+   </tr>
+   </table>
+  
+ </details>
+    
+</section>
+<section id="register">
+  <h2>Create Account</h2>
+  <form action="register.php" method="post" class="user-form">
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="enter your name" required ><br><br>
+    <label for="address">Address:</label>
+    <input type="text" name="address" placeholder="enter your adress" required><br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="text" name="phone" placeholder="enter your number" required ><br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" placeholder="enter your password" required><br><br>
+    <input type="submit" value="Register" class="buy-butn">
+  </form>
+</section>
+
+</main>
+<footer>
+    <p>© 2026 YOUR Fragrance Boutique</p>
+</footer>
+
+</body>
+</html>
